@@ -66,7 +66,7 @@ configure :build do
   # activate :relative_assets
 
   # Or use a different image path
-  set :http_prefix, "/ideal-furniture-static/"
+  # set :http_prefix, "/ideal-furniture-static/"
 end
 
 activate :livereload

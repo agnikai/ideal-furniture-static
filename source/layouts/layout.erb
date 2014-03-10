@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    
+
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    
+
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Ideal Furniture Outlet" %></title>
 
@@ -19,11 +19,16 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <%= favicon_tag "apple-touch-icon-precomposed.png", :relative => true %>
+    <%= favicon_tag "apple-touch-icon.png", :relative => true %>
+    <%= favicon_tag "favicon.png", :relative => true %>
+    <%= favicon_tag "favicon.ico", :relative => true %>
     
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "normalize", "all", :relative => true %>
+    <%= javascript_include_tag  "all", :relative => true %>
   </head>
-  
+
   <body class="<%= page_classes %>">
 
     <header>
